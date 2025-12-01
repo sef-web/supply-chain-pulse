@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SupplyChain Pulse 📦
 
-## Getting Started
+A modern, high-performance B2B Logistics Analytics Dashboard.
+Designed to help warehouse managers track inventory, monitor revenue trends, and manage supplier relationships in real-time.
 
-First, run the development server:
+![Project Status](https://img.shields.io/badge/status-active-success.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Framework:** Next.js 15 (App Router)
+* **Language:** TypeScript (Strict Mode)
+* **Styling:** Tailwind CSS + shadcn/ui
+* **Database:** Supabase (PostgreSQL)
+* **State & Validation:** React Hooks, Zod
+* **Visualization:** Recharts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  **Real-Time Dashboard:**
+    * Visualizes Total Revenue, Active Orders, and Inventory Health.
+    * Interactive charts for revenue trends over time.
 
-## Learn More
+2.  **Inventory Management:**
+    * Searchable data grid for product catalog.
+    * **Low Stock Alerts:** Automatic highlighting of items below reorder points.
+    * **Quick Restock:** One-click mutation to update stock levels in the database.
 
-To learn more about Next.js, take a look at the following resources:
+3.  **Data Analytics:**
+    * **Inventory Valuation:** Breakdown of asset value by category.
+    * **Order Fulfillment:** Visual breakdown of order statuses.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4.  **Developer Experience:**
+    * **Seed API:** Custom secure route (`/api/seed`) to wipe and repopulate the database with mock data.
+    * **Type Safety:** End-to-end TypeScript interfaces for all database entities.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Getting Started
 
-## Deploy on Vercel
+### Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Node.js 18+
+* Supabase account
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/supply-chain-pulse.git](https://github.com/your-username/supply-chain-pulse.git)
+    cd supply-chain-pulse
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Set up Environment Variables:**
+    Create a `.env.local` file in the root directory:
+
+    ```env
+    NEXT_PUBLIC_SUPABASE_URL=your_url
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
+    SEED_SECRET_KEY=my-secret-password
+    ```
+
+4.  **Run the application:**
+    ```bash
+    npm run dev
+    ```
+
+## 📝 License
+
+This project is MIT licensed.
