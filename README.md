@@ -6,7 +6,7 @@ Designed to help warehouse managers track inventory, monitor revenue trends, and
 ![Project Status](https://img.shields.io/badge/status-active-success.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-Tech Stack
+## Tech Stack
 
 * **Framework:** Next.js 15 (App Router)
 * **Language:** TypeScript (Strict Mode)
@@ -15,7 +15,7 @@ Tech Stack
 * **State & Validation:** React Hooks, Zod
 * **Visualization:** Recharts
 
-# Key Features
+## Key Features
 
 1.  **Real-Time Dashboard:**
     * Visualizes Total Revenue, Active Orders, and Inventory Health.
@@ -34,7 +34,7 @@ Tech Stack
     * **Seed API:** Custom secure route (`/api/seed`) to wipe and repopulate the database with mock data.
     * **Type Safety:** End-to-end TypeScript interfaces for all database entities.
 
-# Getting Started
+## Getting Started
 
 ### Prerequisites
 
